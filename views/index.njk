@@ -1,1 +1,23 @@
-ok
+{% extends "base.njk" %}
+
+{% block main %}
+    <div class="home-grid">
+        <aside>
+            <a href="#" class="tooltip" data-label="Home">
+                <ion-icon class="aside-icon" name="film-outline"></ion-icon>
+            </a>
+            <a href="#" class="tooltip" data-label="Genres">
+                <ion-icon class="aside-icon" name="apps-outline"></ion-icon>
+            </a>
+            <a href="#" class="tooltip" data-label="Bookmarks">
+                <ion-icon class="aside-icon" name="bookmark-outline"></ion-icon>
+            </a>
+            <a href="#" class="tooltip spacer-y" data-label="My Settings">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=046c29138c1335ef8edee7daf521ba50" alt="avatar"/>
+                </div>
+            </a>
+        </aside>
+        <section></section>
+    </div>
+{% endblock %}

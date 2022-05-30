@@ -9,6 +9,8 @@ const env = nunjucks.configure('views', {
     watch: true
 })
 
+app.use(express.static('public'))
+
 env.addGlobal("baseUrl", "https://api.themoviedb.org/3")
 env.addGlobal("apiKey", "4e4e80e882e727e79125d96a8b649773")
 
