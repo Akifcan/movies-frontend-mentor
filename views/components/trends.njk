@@ -1,0 +1,15 @@
+<a href="#">
+    <li class="movie-trend-item" style="--url: url('{{ trend.image }}'); ">
+        <div class="save tooltip bottom" data-label="Save">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <ul class="about-movie">
+            <li>📅 &nbsp;
+                {{ trend.year }}</li>
+            <li>🎬 &nbsp; Movie</li>
+            <li>⭐ &nbsp;
+                {{ trend.vote }}</li>
+        </ul>
+        <p class="movie-name">{{ trend.name }}</p>
+    </li>
+</a>

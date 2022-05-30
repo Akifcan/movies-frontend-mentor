@@ -1,7 +1,11 @@
 .container {
     width: min(95%, 1500px);
     margin-inline: auto;
-    margin-block: .5rem;
+    margin-block: 2rem;
+}
+
+.title {
+    font-weight: lighter;
 }
 
 .spacer-y {
@@ -28,6 +32,14 @@
     transition: transform 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+.tooltip.bottom::before {
+    bottom: -50px;
+}
+
 .tooltip:hover::before {
     transform: translateX(-50%) scale(1);
+}
+
+.wrap {
+    flex-wrap: wrap;
 }

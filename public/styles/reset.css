@@ -5,6 +5,7 @@
     --color-scaffold: rgb(24, 22, 22);
     --color-accent: #353132;
     --radius-md: .5rem;
+    --shadow-md: 1px 1px 10px rgba(255, 255, 255, .4);
 }
 
 * {
@@ -22,4 +23,8 @@ a {
 body {
     background-color: var(--color-scaffold);
     color: white;
+}
+
+section {
+    overflow: hidden;
 }

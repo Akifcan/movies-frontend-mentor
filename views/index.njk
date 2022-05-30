@@ -18,6 +18,23 @@
                 </div>
             </a>
         </aside>
-        <section></section>
+        <section>
+            <div class="category">
+                <h2 class="title">Trending</h2>
+                <ul class="movie-list">
+                    {% for trend in trends %}
+                        {% include './components/trends.njk' %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="category">
+                <h2 class="title">Recommended for you</h2>
+                <ul class="movie-list wrap">
+                    {% for discover in discovers %}
+                        {% include './components/discover.njk' %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
     </div>
 {% endblock %}
